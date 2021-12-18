@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700;800&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -5,10 +8,25 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+/* HEADER */
+
 .inicio{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+
+    
+}
+
+.box-inicio{
+    width: 81%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
 }
 
 .menu{
@@ -16,56 +34,119 @@
     justify-content: space-between;
     height: 5vw;
     align-items: center;
+    
+    
 }
 
-.navegacao{
+.menu-navegacao{
     display: flex;
     list-style: none;
     width: 350px;
-    justify-content: space-evenly;
+    justify-content: space-between;
+
+    
+   
+        
+    
 
 }
-.navegacao li{
+.menu-navegacao li{
     color: gray;
+    
+    
 }
-.navegacao li:hover{
+.menu-navegacao li:hover{
     color: #000;
     cursor: pointer;
     font-weight: bold;
-} 
-
-.imagem-inicio{
-    background-image: url("https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:13ead2e1-3ac9-44a1-b4cb-14736da07bb0;revision=0?component_id=90838487-a7fa-4a2c-8cf4-a4748238ac5c&api_key=CometServer1&access_token=1638488248_urn%3Aaaid%3Asc%3AUS%3A13ead2e1-3ac9-44a1-b4cb-14736da07bb0%3Bpublic_735f5012fc494dcba6a9328b194eb9cc66280c55");
-    background-size: cover;
-    height: 80vh;
- 
-}
-.texto-inicio{
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-    height: 48vh;
-    color: #fff;
-    padding-left: 11rem;
+    
 }
 
-.texto-inicio h1{
-    font-size: 4vw;
-    font-style:Montserrat;
+@media (max-width: 470px) {
+    .menu-navegation{
+        display: none;
+    }
    
 }
 
-.paragrafo{
-    font-size: 2vw;
-    color:#f5f5f5;
+.box-imagem-header{
+    background-image: url(img/laranja\ azul\ recorte.png);
+    background-size: cover;
+    height: 55vh;
+    
+ 
+}
+.texto-imagem-header{
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
-    height: 10vh;
-    padding-left: 11rem;    
+    height: 37vh;
+    color: #fff;
+    padding-left: 8rem;
+    
 }
 
-@media (max-width: 400px) {
-    .navegacao{
-        display: none;
-    }
+.texto-imagem-header h1{
+    font-size: 4vw;
+   
+}
+
+.texto-imagem-header p{
+    font-size: 2vw;
+    padding-top: 2%;
+}
+
+
+/* MAIN */
+
+.img-main{
+      width: 23%;
+      margin: 1%;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    height: 100% ;
+    width: 100%;
+    
+
+}
+
+.box-img-main{
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  padding: 45px;
+    
+}
+
+
+/* FOOTER */
+
+.rodape{
+    display: flex;
+    height: 11vh;
+    align-items: center;
+    background-color: #dcdcdc;
+}
+
+.box-imagem-rodape{
+    width: 340px;
+    margin-left: 5rem;
+}
+
+.texto-rodape{
+    display: flex;
+}
+
+.imagem-rodape{
+    margin: 5px;
+}
+
+.paragrafo{
+    width: 51%;
+    font-size: 12px;
+    margin-left: 2rem;
+}
